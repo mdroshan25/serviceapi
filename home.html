@@ -1,0 +1,45 @@
+{% extends "layouts/main.html" %}
+
+{% block content %}
+    <div class="panel panel-default">
+      <div class="panel-heading">host:port/lang</div>
+      <div class="panel-body">
+          <p>GET REQUEST</p>
+        Returns all entries in a database
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">host:port/lang/&lt;string:name&gt;</div>
+      <div class="panel-body">
+          <p>GET REQUEST</p>
+        Returns one entry identified by a name
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">host:port/lang</div>
+      <div class="panel-body">
+          <p>POST REQUEST</p>
+          <p>Body e.g. {"name":"C++"}</p>
+        Creates a new record
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">host:port/lang/&lt;string:name&gt;</div>
+      <div class="panel-body">
+          <p>PUT REQUEST</p>
+          <p>In body you put a new value, e.g. {"name":"HTML"}</p>
+        Updates one entry identified by a name
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">host:port/lang/&lt;string:name&gt;</div>
+      <div class="panel-body">
+          <p>DELETE REQUEST</p>
+        Removes one entry identified by a name
+      </div>
+    </div>
+{% endblock %}
